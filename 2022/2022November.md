@@ -97,3 +97,15 @@
     - Internships & Age of hiring: 
         - No internships/placement this year - under review in the new year.
     - What do we look to hire for: software engineering, not looking for specific tech stack skills, SE principles and soft skills
+- Filling in THGHourglass, could site details be added as a project on it
+## 18/11/2022
+- Catch up with Andy
+- Rewired local gitlab projects to their GitHub counterparts
+- Review Craig’s sonarqub issue fixes PR
+- Ian made a new ticket for me to add toasters for the site details put request handler, done the ticket and put into PR
+- Write up handover notes
+- Schedule automatic reply in Microsoft teams
+## 21/11/2022
+- on annual leave
+## 22/11/2022
+- Follow up on could site details be added as a project on THG Hourglass

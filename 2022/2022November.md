@@ -100,12 +100,46 @@
 - Filling in THGHourglass, could site details be added as a project on it
 ## 18/11/2022
 - Catch up with Andy
+    - Refactor projects in the hourglass
 - Rewired local gitlab projects to their GitHub counterparts
-- Review Craig’s sonarqub issue fixes PR
+- Review Craig’s sonarqube issue fixes PR
 - Ian made a new ticket for me to add toasters for the site details put request handler, done the ticket and put into PR
 - Write up handover notes
 - Schedule automatic reply in Microsoft teams
-## 21/11/2022
-- on annual leave
+- Test put requests and toasters in site details UI
+## 19/11/2022
+- Went to Victoria for 0645 train, it got cancelled and the next one after that so arrived at durham at 1030 instead of 0900 as planned
+- Opening talks
+- Walked around to see all the teams (had 180+) students
+- Interview to push THG as a good employer and to give workshop we’re holding on graphQL later on the day more visibility
+- Workshop on graphQL
+- Walked around to help teams, solved a lot of git issues
+- Got off work at around 1130
+## 20/11/2022
+- Project submissions is 1100 so arrived before to help teams with devpost problems
+- Walked around the building make sure all teams are good or need any last minute help
+- Then had a brief about judging criteria with other judges and helped with general judging
+- Finalist presentations
+- Prize giving and closing ceremony
+- Catch train at 1753
 ## 22/11/2022
-- Follow up on could site details be added as a project on THG Hourglass
+- Catch up with emails
+- Check if endpoints and payload for the put requests in site details have changed and refactor the UI if so.
+- Retro
+- Took a look at the next sprint tickets -> Writing unit tests in modular TP, looking at what other teams did for their ui modules -> importing TestBed from core/testing
+## 23/11/2022
+- Looked at writing unit tests in angular and how they’re written in modular TP
+- Sprint planning
+- Catch up with Ali
+- All hands: PEAK
+## 24/11/2022
+- Ben Ellerton responded, saying the Canterbury AU trickle script should get reviewed quickly after BF
+- Write up travel expenses used during the weekend
+- Toolbox meeting
+- Took up ticket to update the component-index files for redirect engine, redirect configurator, site manager ui, site manager api
+    - Call with Craig for help in snyk integration
+    - Imported into snyk site manager ui successfully but the redirects configuration and redirects engine have errors
+    - Redirects engine doesn’t need snyk, so changed team ownership to site builds only
+    - Redirects configuration
+        - live.yaml file doesn’t parse correctly -> checked the GitHub repo and it didn’t have the secrets 
+        - Contacted Adam Buchan-Wyber to ask for gitlab access

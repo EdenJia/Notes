@@ -143,3 +143,45 @@
     - Redirects configuration
         - live.yaml file doesn’t parse correctly -> checked the GitHub repo and it didn’t have the secrets 
         - Contacted Adam Buchan-Wyber to ask for gitlab access
+## 25/11/2022
+- Follow up with Adam Buchan-Wyber on the ticket
+- Personal development - catching up on early careers’ handouts
+## 26/11/2022
+- Adam buchan-wyber responded at 10pm on Friday, attaching a screenshot of the secret being present in the secrets action section for GitHub, I checked and realised that THG-engagement has their own redirect-configurator repo set up on GitHub with secret. Redirects configurator ownership is transferred to us right?
+    - Lewis Callum or Ryan Jackson
+## 28/11/2022
+- Since we parked redirects configuration, all the services I had to update the component-index files is finished. I made two PRs and put the ticket into review. They just need a review, freeze is still on until tomorrow so no merging needed
+- Catch up with Andy - Wednesday BAU
+    - Wednesday: decommission, trickle script
+- Security audit on site importer ui -> Setup site import ui: bower install had a problem with installing file-saver.js as it’s not found as a remote repository, further googling showed that the file-saver.js repo is abandoned and bower is deprecated. Did the npm install of it instead and got gulp error. Did general npm install and still got an error that optional dependancy utf 8 validate couldn’t install because of a command in its setup script ’node-gyp rebuild’
+## 29/11/2022
+- Continue setting up site importer ui -> ask for help from Rich
+    - Call with Rich, he called in Lewis Callan, and then lewis called in Ryan Jackson
+    - Can’t get assets needed for site importer ui from gitlab so think changed bower.json to get from GitHub instead
+-  Contacted by Scott Johnson on site configurator 
+    - %%DC%%.redirects.io.thehut.local
+    - %%SSH_PRIVATE_KEY%%
+    - Andy’s moving those secrets over
+## 30/11/2022
+- Pick up site builder decommission ticket
+- Site importer ui runs now, pushed the changed package manager files to my security audit branch
+    - Added it to snyk and found it was a lot more work than thought
+    - Call with Sean to go over what to do with it, called in Andy 
+    - Give Andy the roles needed : site-importer-uploader, site-importer-widget-cloning, site-importer-display-text-uploader
+    - Decided upon updating README and making sure new developers have an easier process running site importer ui
+    - It was put into review and reviewed. It’s going to sit in the reviewed column until Andy gives me the go ahead
+- THG hourglass: projects to add
+    - Site importer api/ ui
+    - Site manager ui
+    - Redirects configurator/ engine
+    - Sorry server
+- Chased Ben Ellerton on the trickle script ticket 
+    - we're doing BF follow up tasks until the end of the tighter deployment window (it ends on Tuesday) so this may have to wait until next week
+- Started looking through documentation and gathering info on decommissioning old site builder with Andy 
+    - 1. Part of the process is to remove nagios alerts but I did not have the role for nagios -> rich made a ticket in service desk to expedite the process
+    - 2. Shutdown VM/k8 -> as old site builder is on k8 Andy says the process should be easier
+    - 3. Remove DNS records for all instances of VM
+        - Get access token
+        - Get DNS info with access token
+        - Send delete req with io_uuid key from dns info
+    - 4. Submit ticket of template: request to decommission a virtual machine

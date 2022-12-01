@@ -1,0 +1,14 @@
+## 01/12/2022
+- Written up self assessment document
+    - Call with Ian about how to fill them out
+    - Send assessment to Andy by the 9th
+- Chase Andy on the site importer ui ticket & site importer roles
+- Add on JIRA as many issues as I can identify back to nextJS migration epic 
+- Sean add to linux channel -> got nagios access
+- Decommission
+    - Staff tech responded: that role request is for the linux team and added that to their queue
+        - chase nagios role request ticket with the linux team, don’t know how to contact them
+    - Arrange a call with Craig for advice on decommissioning
+- Call with Ian for setting up test on site details ui
+- Ask Sean about properties service GitHub migration -> haven’t merged unit test coverage audit branch into master yet
+    - Will be released after the GitHub actions pipeline is finished

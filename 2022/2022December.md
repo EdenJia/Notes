@@ -12,3 +12,31 @@
 - Call with Ian for setting up test on site details ui
 - Ask Sean about properties service GitHub migration -> haven’t merged unit test coverage audit branch into master yet
     - Will be released after the GitHub actions pipeline is finished
+## 02/12/2022
+- Got on a call with Craig and finished decommissioning old site builder
+- Look over self assessment before sending to Andy
+- CONTACT STAFF TECH ABOUT DC ACCOUNT DETAILS NOT WORKING
+- Contacted staff about troubles logging into okra
+- Call with Ian on unit testing on Site details UI 
+05/12/2022
+- Picked up ticket about running SQL to add Cerberus Permissions to tabernus and add Site Details to Teepee Feature
+    - Could not access stable tabernus, asked ctp team, they said to raise a ticket for access with the DBA team
+    - Raised the ticket and pinged the DBA team, they responded and said that ticket didn’t need to be raised, I just need to be added to the windows groups that allow access. Found out the security group I needed to be added to ‘IT_development/Group_Development’
+    - Followed up with DBA on who to go to to be added to the group. They told me to raise an SD+ with staff tech.
+    - Raised ticket with staff tech and pinged on their teams channel. Waiting for a response now.
+    - In meantime, completed as much of the ticket I will raise when finally making the changes to tabernus and Elysium. 
+- Call with Ian finalising going through modular TP testing
+- Did two 360 forms
+## 06/12/2022
+- CanterburyAU trickle script
+    - Chase Ben Ellerton Canterbury AU trickle script ticket
+    - Since It’s been such a long time, the auto-cleanup job has dropped the data table
+    - Made redirects table and inserted data again
+    - Ben Ellerton asked for rollback plan - we didn’t have one
+        - He wrote a rollback trickle script and I’ll use it as a template for future rollback trickle script
+        - Update sd ticket description to add rollback plan and attached rollback trickle script
+- Retro 
+- Released: Adding site details permission on Cerberus and site details feature on teepee
+    - For gaining tabernus access, ask Andy for approval on gaining access -> got approved
+    - Then will create another ticket for adding data into tabernus and Elysium -> Sam approved
+    - Call with Sean to run the scripts -> done

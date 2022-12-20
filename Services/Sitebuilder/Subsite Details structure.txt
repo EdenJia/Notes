@@ -1,0 +1,63 @@
+Subsite Details.tsx structure
+div
+    PackagingGroup
+    StockOwner   
+    div/
+        Form/
+            complete? div || Footer
+            FieldSet/
+                legend/p "subsite info part 1"
+                FormRow/
+                    div/FormItem/Input + errmsg  "subsite name"
+                FormRow/
+                    div/Dropdown + errmsg "default subsite code"
+                    div/Dropdown + errmsg "default locale"
+                    div/Dropdown + errmsg "default currency"
+                FormRow/FormItem/
+                    div/Input + errmsg "domain"
+                    CheckboxWrapper/Checkbox "site alias required"
+                FormRow/div/
+                    Dropdown + errmsg "Site to clone delivery"
+                SiteType/
+                    p "Client Type"
+                    Card/
+                        Client/Radiolabel/
+                            div "ingenuity logo"
+                            span/input "isIng"
+                        Client/Radiolabel/
+                            div "THG logo"
+                            span/input "isTHG"
+                br
+                FormRow/CheckboxWrapper/Checkbox "requires blog"
+            FieldSet
+                legend/p "Warehouse info part 2
+                FormRow/
+                    warehouses.ctas.length? Grid || null
+                    complete null || div/
+                        InfoTip
+                        Dropdown "warehouses" + errmsg
+                hr
+                FormRow/FormItem/div/DropDown "legal entity" + errmsg
+                FormRow/FormItem/div/Dropdown "business unit" + errmsg
+                FormRow/FormItem/div/Dropdown "Merchant of Record" + errmsg
+                FormRow/FormItem/div/Dropdown "Stock Model" + errmsg
+                FormRowInline/AnimatePresence/
+                    notifyModelChange FormHint/InfoTip || null
+                FormRowInline/FormItem/div/
+                    Dropdown "Packaging Group"
+                    ButtonWrapper/Button newPackagingGroup "Edit" || "Create" + errmsg
+                FormRowInline/FormItem/div/
+                    Dropdown "Stock Owner"
+                    ButtonWrapper/Button newPackagingGroup "Edit" || "Create" + errmsg
+                !formData.blogSetupRequired div || FieldSet
+                    legend/p "Blog Info part 3"
+                    FormRow/FormItem/div/Input "Root Directory" + errmsg
+                FormRow/
+                    div/Dropdown "Blog Theme" + errmsg
+                    div/Dropdown "Blog Languages" + errmsg
+                hr
+                FormRow/
+                    FormItem/div/Input "Asgard Override Country" + errmsg
+                    FormItem/div/Input "Asgard Override Currency" + errmsg
+                FormRow/FormItem/div/Input "Linked To" + errmsg
+

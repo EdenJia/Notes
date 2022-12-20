@@ -40,3 +40,68 @@
     - For gaining tabernus access, ask Andy for approval on gaining access -> got approved
     - Then will create another ticket for adding data into tabernus and Elysium -> Sam approved
     - Call with Sean to run the scripts -> done
+## 07/12/2022
+- Complete early careers tasks on probation prep
+- Sprint planning
+- Picked up and completed catch all redirect ticket with Ian
+    - Redirect garden of life ru, hk. Kleanathlete de, au, jp, en. MinamiHealth en. All to everyhealth.com
+- Catch up with Ali
+- Picked up adding new Site Details roles to users or role group ticket
+## 08/12/2022
+- Completed: adding new Site Details roles to users or role group ticket
+    - Asked Sam what role_names e.g. tpcms-developer, tpcms-trader will have the added permissions of site details read and write 
+    - Verified SQL with lewis Callan
+    - Write an SD ticket, test on stable (tell Sean so he can test changes on site details api) then on live
+## 09/12/2022
+- VM Patching, need access to spacewalk. Need Andy’s approval so blocked
+- Reviewed: ‘search by subsite name in test server on sitebuilder’ ticket
+    - Called Craig to pair program it
+    - Removing theme switching on Sitebuilder, rebuilding it.
+## 12/12/2022
+- Merged: ‘search by subsite name in test server on sitebuilder’ ticket
+- Site importer UI security audit merge
+    - Had a chat w/ Andy about it -> Need to fix broken Jenkins pipeline and build a pipeline on GitHub. Added this as ticket into the backlog https://thehut.atlassian.net/browse/BGD-1377?atlOrigin=eyJpIjoiZjk0OTRlMjM3NjUxNGNlYjllNzZiZmM3ODU2MDgxODgiLCJwIjoiaiJ9 
+- Finished patching big Dave on gb1, gb4 and gb5
+13/12/2022
+- Setting up sonarqube locally with Craig for Sitebuilder sonarqube ticket 
+    - Spend afternoon working on it.
+## 14/12/2022
+- Carry on with site builder sonarqube ticket
+    - A lot of major issues are about using nested template literals - which are used in a lot styled components. Fixing those would decrease code readability and increase bloat so I told Craig and he’s going to have a look at it.
+- Power cut
+- All hands
+## 15/12/2022
+- Put sonarqube ticket into review and it’s been merged
+- Update macOS 
+- End of year presentation & annual awards
+- ACN update and end of year send off
+- Catch up with Ali
+## 16/12/2022
+- Test PUT request endpoints on card content
+- Test toaster pop ups
+- Personal development
+## 19/12/2022
+- Chase up on Craig’s new service account ticket
+    - Windows server Matt Samways says documentation on creating an SD account is outdated and enabling okra without 2fa needs unlikely sign off from infosec
+    - ‘So at the moment this isn't something we would be doing. An investigation is underway on SAs that raise changes. I have spoken to the Admins of SDP and this investigation is currently with Nik Gupta and he is off until the 3rd Jan. ‘
+- Review Craig’s tickets and release site builder with Ian - release tagged v1.2.7, but on website v1.3.0, changed package.json tag from 1.3.0 to 1.2.7
+    - Site confirmation:
+        - If tick labels should be linked
+        - Upgrade quality of the images
+    - Release notes spike ticket
+        - Cannot see release notes when ran locally
+        - Install and test job fails on merge request into main
+## 20/12/2022
+- Call w/ Ian first half of the day
+    - Pick up a modular TP ticket -  to implement a feature to allow users to update a global config at the subsite level
+        - Told to prioritise ticket below as this one is moving to backlog
+    - Pick up other mod tp tick
+        - Plan of action:
+            1. (Done) Disable button fix
+            2. (WIP) Figure out updating toggle
+            3. Figure out persistent order when social changes 
+## 21/12/22
+- Fill in THG Hourglass
+- Write up handover notes/ out of office message on Teams & email
+- Update December notes
+- Call w/ Ian to update on ticket details

@@ -101,11 +101,13 @@
             2. (WIP) Figure out updating toggle
             3. Figure out persistent order when social changes 
 ## 21/12/22
-- Continue to figure out updating toggle for social link
-    - Call w/ Ian to update on ticket details
+- Released: implement social link toggle functionality
+    - Call w/ Ian to fix issue
+    - Found new bug with toaster message
 - Fill in THG Hourglass
 - Sprint planning
-- Write up handover notes/ out of office message on Teams & email
+- Write up out of office message on Teams
 - Update December notes
 - Cover the prepping for early career's mid-year review drop email
 - Catch up with Ali
+- Chase Andy for probation review meeting

@@ -1,4 +1,4 @@
-# Core Objectives
+# Core Objectives H2
 - Be a contributing team member
     - How to achieve
     - Communicate and keep team member up to date.

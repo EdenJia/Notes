@@ -101,7 +101,11 @@
             2. (WIP) Figure out updating toggle
             3. Figure out persistent order when social changes 
 ## 21/12/22
+- Continue to figure out updating toggle for social link
+    - Call w/ Ian to update on ticket details
 - Fill in THG Hourglass
+- Sprint planning
 - Write up handover notes/ out of office message on Teams & email
 - Update December notes
-- Call w/ Ian to update on ticket details
+- Cover the prepping for early career's mid-year review drop email
+- Catch up with Ali

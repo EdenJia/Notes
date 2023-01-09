@@ -1,3 +1,4 @@
+# 2022 December
 ## 01/12/2022
 - Written up self assessment document
     - Call with Ian about how to fill them out
@@ -103,7 +104,7 @@
 ## 21/12/22
 - Released: implement social link toggle functionality
     - Call w/ Ian to fix issue
-    - Found new bug with toaster message
+    - Found new bug with update sucess toaster message
 - Fill in THG Hourglass
 - Sprint planning
 - Write up out of office message on Teams

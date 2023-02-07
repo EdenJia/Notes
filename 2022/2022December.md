@@ -111,4 +111,4 @@
 - Update December notes
 - Cover the prepping for early career's mid-year review drop email
 - Catch up with Ali
-- Chase Andy for probation review meeting
+- Andy probation review meeting - passed!

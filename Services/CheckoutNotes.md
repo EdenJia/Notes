@@ -1,0 +1,41 @@
+
+# CHECKOUT NOTES
+- Site Crawl: description in details
+    - Clients raise checkout build template in backlog with ‘[CLONE ONLY]’
+        - Go to site build page: https://thehut.atlassian.net/wiki/spaces/CP/pages/1411547170/Site+Build+Progress and add to table in alphabetical order. Keep track of site type: ingenuity or THG
+        - Basic necessity is checkout styling and GTM (a config you need to fill in)
+            - Ask access for Google API - used to load up google maps for click and collect: insert url of checkout page and only allowed in specific subsites
+            - BE CAREFUL!! Check with PM if customer want click and collect enabled
+    - Migrate all sites that have gone live from the site build progress confluence page to the Completed Sites confluence page.
+        - Problem with live site falls to checkout, in progress sites are me and Simone’s responsibility
+        - Check off live sites in site crawl and add to completed site build list: https://thehut.atlassian.net/wiki/spaces/CP/pages/1414268644/Completed+Site+Build
+    - Ensure all ongoing checkout builds are up to date on progress such as branding and GTM configs
+        - Site build page: check off GTG and see what other tasks you can action
+        - FOR GTM: https://hutgroupnorthwich.sharepoint.com/:x:/r/sites/GoogleAnalyticsQA/_layouts/15/doc2.aspx?sourcedoc=%7B49D7EED9-E1EB-48E2-8C05-9DF4929CA4AB%7D&file=Web%20Analytics%20Matrix.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1&ct=1673258635522&wdOrigin=OFFICECOM-WEB.START.REC&cid=bd20b3a8-044d-4866-9257-ea7e9c057af6 grab the GTM Container code and put it in jumpbox’s  subset config in property field ‘gtm_account’: “string” used for analysing clicks in checkout
+        - Prop65 to be enabled: is a setting needed to go to jumpbox
+            - Let checkout team know that that needs enabling
+            - Request by basis
+        - Font styling - request change by client when passing UAT.
+    - Ensure ongoing checkout builds that have all tasks completed are signed off with a GTG status and has been communicated through to respective project managers.
+    - Follow up with respective teams in regards to configs that are required from them such as GTM IDs
+        - If GTM Container code not listed after a month, search up chat for analytics team
+        - Client: What if some payment option not enabled? That’s payment team
+        - Client: Why delivery option not there?: That’s for transport and delivery
+        - More questions as such may be answered by site build progress
+    - When finished every checkout task, text in their chat ‘checkout GTG’
+    - Login page stuff belongs to Elysium 2. PM tests site, view backet, checkout, go to login page -> this is Elysium 2 team, Jason Brown.
+    - When building checkout branding and Simone missing -> Oliver Holden or Harry Bartley (the checkout lead)
+- Access to jumpbox needs PCI training.
+# Checkout build
+- Check if style guide is ready, make sure logo and colour palette isn’t white label
+- Primary button colour if white leave blank, background colour if white also leave blank, if border colour the same as background colour then leave blank
+- For true and false fields: just true if true and leave blank if false =)
+- Typography
+- ThemeInterface.ts library of stuff you can style. Optional values don’t have a default value - used to override in ts files. 
+    - Adding new configurable
+- getThemeDefaults.ts: shows mandatory default values
+- styles.scss has values you have to cross check with style guide
+- If you add extra attributes in scss, have to add in the .ts
+- If body copy != 400, add base { fontWeight: 500 }
+- Once site checkout build in review, update checkout progress table
+- Once checkout build released, update site progress confluence page, update teams chat if style is released

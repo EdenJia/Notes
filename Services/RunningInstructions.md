@@ -98,3 +98,13 @@ docker login artifactory.io.thehut.local:5000/engagement-vertical/flyway (DC acc
 ```
 ./gradlew clean spark:assemble -Djavax.net.ssl.trustStore="/Users/edenjia/Downloads/cacerts" -Djavax.net.ssl.trustStorePassword=changeit
 ```
+## Olympus
+1. `git clone` olympus, 
+2. replace `.m2/settings.xml `with {insert file here}, 
+3. app needs node 16 and java 11, 
+4. comment line 16 in `applications-dev.properties` to allow lazy startup, 
+5. `mvn install`, 
+6. `sudo npm install —legacy-peer-deps`, 
+7. `sudo npm install webpack-plugin --legacy-peer-deps`
+8. `sudo npm run build`, 
+9. then run olympusApplication config from intellij - to setup and run Olympus 

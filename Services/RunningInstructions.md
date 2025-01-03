@@ -1,16 +1,19 @@
 # SITE AUTOMATION PRODUCT RUNNING INSTRUCTIONS
 
-## MODULAR TEEPEE:
+## MODULAR TEEPEE (MOD TP):
 
 Terminal 1:
 ```
-export JAVA_HOME=`/usr/libexec/java_home -v 17
+export JAVA_HOME=`/usr/libexec/java_home -v 21
 
-nvm use, yarn
+nvm use, pnpm install
+./gradlew clean build
 
 ./gradlew run -PonlyIncludeModules={module names}
 
-./gradlew run -PonlyIncludeModules=com.thg.teepee.sitedetails.ui, ./gradlew run -PonlyIncludeModules=com.thg.teepee.sitedetails.ui,com.thg.teepee.sitedetails.provider.sitedetailsservice,com.thg.teepee.sitedetails.dto,com.thg.teepee.sitedetails.domain,com.thg.teepee.sitedetails.api,com.thg.teepee.sitedetails.provider.mock
+./gradlew run -PonlyIncludeModules=com.thg.teepee.sitedetails.ui,com.thg.teepee.sitedetails.provider.sitedetailsservice,com.thg.teepee.sitedetails.dto,com.thg.teepee.sitedetails.domain,com.thg.teepee.sitedetails.api,com.thg.teepee.sitedetails.provider.mock
+
+./gradlew run -PonlyIncludeModules=com.thg.teepee.propertiesservice.ui,com.thg.teepee.propertiesservice.provider.propertiesservice,com.thg.teepee.propertiesservice.dto,com.thg.teepee.propertiesservice.domain,com.thg.teepee.propertiesservice.api
 ```
 Modular Teepee should be accessible on `http://localhost:8090/`
 ```
@@ -42,7 +45,7 @@ Sitebuilder should be accessible on `http://localhost:3000/`
 
 To run cypress tests, 
 ```
-run npx cypress open
+npx cypress open
 ```
  
 ## Big Dave

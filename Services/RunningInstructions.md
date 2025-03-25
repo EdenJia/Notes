@@ -59,6 +59,15 @@ Click the play button to build and run
 
 BD should be accessible on `http://localhost:8085/`
 
+## Apollo
+1. Make sure you're running Java17
+2. Build the project: ./gradlew -Djavax.net.ssl.trustStore="$JAVA_HOME/lib/security/cacerts" -Djavax.net.ssl.trustStorePassword=changeit --no-daemon --refresh-dependencies clean assemble
+3. If needed, remove the old apollo docker image: docker rmi apollo:latest
+4. Build the docker image: docker build --progress=plain --pull --no-cache -t apollo:latest .
+5. Run with docker: docker run --rm -p 8080:8080 -p 5005:5005 -v ./environment/local:/opt/tomcat/resources:ro -v ./logs:/opt/tomcat/logs:rw -e HOST_HOSTNAME=localhost -e EXTRA_CATALINA_OPTS=-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005 apollo:latest
+6. Check the app is functioning as it should
+7. Run the healthcheck and make sure all endpoints return 200 code: sh automation/healthcheck.sh local <ad-username>
+
 ## PROPERTIES SERVICE
 Moved to ModTP
 

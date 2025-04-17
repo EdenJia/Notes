@@ -120,3 +120,9 @@ docker login artifactory.io.thehut.local:5000/engagement-vertical/flyway (DC acc
 7. `sudo npm install webpack-plugin --legacy-peer-deps`
 8. `sudo npm run build`, 
 9. then run olympusApplication config from intellij - to setup and run Olympus 
+
+## redirect configurator
+1. create a `.env` file in same dir as `.env.dist` and fill in id and secret (from co-worker or k9s)
+2. chmod -R 777 .
+3. disable cloudflare
+4. docker-compose up --build

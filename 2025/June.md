@@ -178,8 +178,15 @@
     - Resolved with Ian p and Andrew h
 ## 30/06/2025
 - Properties proposal
-    - New feature proposal to bulk upload to multiple locales in one api endpoint
+    - Share details with api endpoint that accepts single locale
+    - Share documentation in properties proposal meeting chat.
 - On call discussion
-    - Ask someone about OOO - how much extra pay? Can I come in later? How do they track the OOO?
+    - So tooling on call is 150 gbp per week. More trees since Handover not compensated, Andrew hough on rota all the time for ingenuity implementation
+    - Set up knowledge sharing sessions for Apollo troubleshooting
+        - Made an initial onboarding site automation chat with matt, tash, William and josh
+        - Listed dis, Okta groups, GitHub orgs, roles
 - Talk with matt on decommissioned services’ status & work out the workflow.
 - Linux team about artifactory credentials
+    - Talk to kev jackson about solution
+- Self review
+- 360 reviews
